@@ -4,6 +4,7 @@ body {
     background-color: grey;
     margin: 0;
     display: block;
+    padding: 0;
   }
 div {
     display: block;
@@ -15,6 +16,8 @@ div {
   html {
     height: -webkit-fill-available;
     display: block;
+    margin: 0;
+    padding: 0;
   }
   
 .root {
@@ -24,6 +27,11 @@ div {
   .container {
     background-color: purple;
     min-height: 100vh;
+  }
+
+  .content-container div {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   
   main {
