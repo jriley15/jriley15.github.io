@@ -1,5 +1,5 @@
 body {
-    height: 100%;
+    height: -webkit-fill-available;
     background-color: grey;
     margin: 0;
     display: block;
@@ -14,7 +14,7 @@ div {
     box-sizing: border-box;
 }
   html {
-    height: 100%;
+    height: -webkit-fill-available;
     display: block;
     margin: 0;
     padding: 0;
@@ -27,7 +27,7 @@ div {
 
   .container {
     background-color: purple;
-    min-height: 100vh;
+    height: -webkit-fill-available;
   }
 
   .content-container div {
