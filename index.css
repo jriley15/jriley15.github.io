@@ -22,7 +22,7 @@ div {
   }
   
 .root {
-    height: 100%;
+    min-height: 100vh;
 }
 
   .container {
@@ -35,6 +35,9 @@ div {
   }
   
   main {
+
+    max-height: 100vh;
+    overflow-y: auto;
     background-color: tan;
     padding: 1rem;
   }
