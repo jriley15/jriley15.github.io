@@ -36,8 +36,7 @@ div {
   
   main {
     background-color: green;
-    height: 100vh;
-    overflow-y: auto;
+
     padding: 1rem;
   }
 
