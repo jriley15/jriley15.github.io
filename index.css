@@ -21,7 +21,7 @@ div {
   }
   
 .root {
-    height: 100%;
+    height: -webkit-fill-available;
 }
 
   .container {
@@ -35,9 +35,8 @@ div {
   }
   
   main {
-    background-color: blue;
-    height: 100vh;
-    overflow-y: auto;
+    background-color: tan;
+
     padding: 1rem;
   }
 
