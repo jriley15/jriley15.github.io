@@ -22,3 +22,7 @@ body {
      max-height: -webkit-fill-available;
     overflow-y: auto;
   }
+
+  input {
+      font-size: 18px;
+  }
