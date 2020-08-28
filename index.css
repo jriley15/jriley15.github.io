@@ -1,5 +1,6 @@
 body {
-    height: -webkit-fill-available;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
     background-color: grey;
     margin: 0;
     display: block;
@@ -27,7 +28,6 @@ div {
 
   .container {
     background-color: purple;
-    height: -webkit-fill-available;
   }
 
   .content-container div {
@@ -37,7 +37,6 @@ div {
   
   main {
     background-color: tan;
-    height: -webkit-fill-available;
     padding: 1rem;
   }
 
