@@ -1,9 +1,9 @@
 body {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
+    height: 100%;
     background-color: grey;
     margin: 0;
     display: block;
+    border: 1px solid red;
     padding: 0;
   }
 div {
@@ -14,10 +14,11 @@ div {
     box-sizing: border-box;
 }
   html {
-    height: -webkit-fill-available;
+    height: 100%;
     display: block;
     margin: 0;
     padding: 0;
+    border: 1px solid blue;
   }
   
 .root {
@@ -36,7 +37,6 @@ div {
   
   main {
     background-color: tan;
-
     padding: 1rem;
   }
 
