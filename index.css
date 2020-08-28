@@ -37,6 +37,7 @@ div {
   
   main {
     background-color: tan;
+    height: -webkit-fill-available;
     padding: 1rem;
   }
 
