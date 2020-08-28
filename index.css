@@ -23,10 +23,11 @@ div {
   }
   
 .root {
-    min-height: 100vh;
+    height: 100%
 }
 
   .container {
+    min-height: 100vh;
     background-color: purple;
   }
 
