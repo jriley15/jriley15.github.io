@@ -30,9 +30,7 @@ html {
 }
 
 .container {
-    max-height: 100vh;
-    max-height: -webkit-fill-available;
-    overflow-y: auto;
+    min-height: 100vh;
     background-color: purple;
 }
 
@@ -42,6 +40,9 @@ html {
 }
 
 main {
+    max-height: 100vh;
+    max-height: -webkit-fill-available;
+    overflow-y: auto;
     background-color: tan;
     padding: 1rem;
 }
