@@ -30,8 +30,8 @@ html {
 }
 
 .container {
-    max-height: -webkit-fill-available;
     max-height: 100vh;
+    max-height: -webkit-fill-available;
     overflow-y: auto;
     background-color: purple;
 }
