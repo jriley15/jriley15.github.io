@@ -37,6 +37,7 @@ html {
 }
 
 main {
+    height: 100%;
     overflow-y: auto;
     background-color: tan;
     padding: 1rem;
