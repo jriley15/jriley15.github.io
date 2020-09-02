@@ -40,8 +40,7 @@ html {
 }
 
 main {
-    max-height: 100vh;
-    max-height: -webkit-fill-available;
+    height: 100vh;
     overflow-y: auto;
     background-color: tan;
     padding: 1rem;
