@@ -6,6 +6,7 @@ body {
     display: block;
     border: 1px solid red;
     padding: 0;
+    position: relative;
 }
 
 div {
@@ -31,13 +32,11 @@ html {
 
 .container {
     min-height: 100vh;
-    height: -webkit-fill-available;
     background-color: purple;
 }
 
 main {
     height: 100vh;
-    height: -webkit-fill-available;
     overflow-y: auto;
     background-color: tan;
     padding: 1rem;
