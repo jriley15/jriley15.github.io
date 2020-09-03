@@ -30,7 +30,6 @@ html {
 
 .container {
     height: 100vh;
-    max-height: -webkit-fill-available;
     background-color: purple;
 }
 
